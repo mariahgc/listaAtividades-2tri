@@ -11,17 +11,25 @@
     const ww = Number(prompt("Informe outro número"));
     const ee = prompt("Informe qual operação deseja realizar:");
 
-    const tt = qq + ww;
-    const yy = qq - ww;
-    const uu = qq * ww;
-    const ii = qq / ww;
-
-    if(ee == "+" && tt % 2 === 1 ){
-    alert (`ele é impar`);
+    let resultado = 0;
+    if (ee == "+") {
+        resultado = qq + ww;
+    }
+    else if (ee == "-") {
+        resultado = qq - ww;
+    }
+    else if (ee == "*") {
+        resultado = qq * ww;
+    }
+    else if (ee == "/") {
+        resultado = qq / ww;
     }
 
-    else if(ee = "+" && tt % 2 === 0){
-    alert (`ele é par`);
+    if (resultado % 2 == 0) {
+        alert(`O resultao é par!`);
+    }
+    else {
+        alert(`O resultado é ímpar!`);
     }
 
     

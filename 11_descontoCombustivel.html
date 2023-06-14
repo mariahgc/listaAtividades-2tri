@@ -17,10 +17,9 @@
     const ag = prompt("Foi álcool ou gasolina?").toUpperCase();
 
     if(ag == "álcool" && ll <= 20){
-        const aa = 3 / 100 * ag;
-        const aaa = aa * ll;
-        const aaaa = ll * 6.10 - aaa;
-        alert(`O valor a ser pago será ${aaaa}`);
+        const litro = 6.1 * 0.97;
+        const pagar = litro * ll;
+        alert(`O valor a ser pago será ${pagar}`);
     }
 
     else if(ag == "álcool" && ll > 20){
