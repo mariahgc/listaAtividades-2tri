@@ -6,12 +6,22 @@
     // - cães de porte médio: fator 6
     // - cães grandes: fator 7.
 
-    // Entrada
+    const xx = Number(prompt("Informe a idade de seu cão:"));
+    const zz = prompt("Informe o porte de seu cão").toUpperCase();
 
-    
-    // Processamento
+    if(zz == "médio"){
+        const tt = xx * 6;
+        alert(`Seu cão está com ${tt} anos`);
+    }
 
-    
-    // Saída
+    else if(zz == "pequeno"){
+        const yy = xx * 5;
+        alert(`Seu cão está com ${yy} anos`);
+    }
+
+    else if(zz == "grande"){
+        const ll = xx * 7;
+        alert(`Seu cão está com ${ll} anos`);
+    }
 
 </script>

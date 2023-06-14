@@ -6,12 +6,29 @@
         //- até 1500(inclusive): aumento de 10 %
         //- acima de 1500: aumento de 5 %
     
-    // Entrada
-
+    const dd = Number(prompt("Informe o preço do produto:"));
     
-    // Processamento
+    if(dd <= 280){
+        const ii = 20 / 100 * dd; 
+        const ff = dd + ff;
+        alert(`O preço do produto será: ${ff}`);
+    }
 
-    
-    // Saída
+    else if(dd <= 700){
+        const hh = 15 / 100 * dd;
+        const ss = dd + hh;
+        alert(`O preço do produto será: ${ss}`);
+    }
 
+    else if(dd <= 1500){
+        const jj = 10 / 100 * dd;
+        const pp = dd + jj;
+        alert(`O preço do produto será: ${pp}`);
+    }
+
+    else if(dd > 1500){
+        const kk = 5 / 100 * dd;
+        const mm = dd + kk;
+        alert(`O preço do produto será: ${mm}`);
+    }
 </script>

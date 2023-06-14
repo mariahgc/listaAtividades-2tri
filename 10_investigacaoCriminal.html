@@ -9,11 +9,117 @@
     - "Já trabalhou com a vítima?"
     O script deve no final emitir uma classificação sobre a participação da pessoa no crime. Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".
     */
-
-    //ENTRADA
-
-    //PROCESSAMENTO
-
-    //SAÍDA
-
-</script>
+  
+  
+  
+  
+  const nn = prompt("responda com sim ou não: Telefonou para a vítima?").toUpperCase();
+  const ee = prompt("responda com sim ou não: Esteve no local do crime?").toUpperCase();
+  const rr = prompt("responda com sim ou não: Mora perto da vítima?").toUpperCase();
+  const yy = prompt("responda com sim ou não: Devia para a vítima?").toUpperCase();
+  const ww = prompt("responda com sim ou não: Já trabalhou com a vítima?").toUpperCase();
+   
+  if (nn === "sim" && ee === "sim"){
+    alert(`suspeita`);
+  }
+   
+  else if (nn === "sim" && rr === "sim"){
+    alert(`suspeita`);
+  }
+    
+  else if(nn === "sim" && yy === "sim") {
+    alert(`suspeita`);
+  }
+   
+  else if(nn === "sim" && ww === "sim"){
+    alert(`suspeita`);
+  } 
+  
+  else if(ee === "sim" && rr === "sim"){
+    alert(`susupeita`);
+  } 
+  
+  else if(ee === "sim" && yy === "sim"){
+    alert(`suspeita`);
+  } 
+  
+  else if(ee === "sim" && ww === "sim"){
+    alert(`susupeita`);
+  }
+  
+  else if(rr === "sim" && yy === "sim"){
+    alert(`suspeita`);
+  }
+   
+  else if(rr === "sim" && ww === "sim"){
+    alert(`suspeita`);
+  }
+   
+  else if(yy === "sim" && ww === "sim"){
+    alert(`suspeita`);
+  }
+  
+  else if(nn === "sim" && ee === "sim" && rr === "sim"){
+    alert(`Cúmplice`);
+  }
+  
+  else if(nn === "sim" && ee === "sim" && ww === "sim"){
+    alert(`Cúmplice`);
+  }
+  
+  else if(nn === "sim" && ee === "sim" && yy === "sim"){
+    alert(`Cúmplice`);
+  }
+   
+  else if(nn === "sim" && rr == "sim" && ww == "sim"){
+    alert(`Cúmplice`);
+  }
+  
+  else if(nn === "sim" && rr === "sim" && yy === "sim"){
+    alert(`Cúmplice`);
+  }
+  
+  else if(nn === "sim" && ww === "sim" && yy === "sim"){
+    alert(`Cúmplice`);
+  }
+  
+  else if(ee === "sim" && rr === "sim" && ww === "sim"){
+    alert(`Cúmplice`);
+  }
+  
+  else if(ee === "sim" && rr === "sim" && yy === "sim"){
+    alert(`Cúmplice`);
+  }
+   
+  else if(rr === "sim" && yy === "sim" && ww === "sim"){
+    alert(`Cúmplice`);
+  }
+  
+  else if(nn === "sim" && ee === "sim" && rr === "sim" && ww === "sim"){
+    alert(`Cúmplice`);
+  }
+  
+  else if(nn === "sim" && ee === "sim" && rr === "sim" && yy === "sim"){
+    alert(`Cúmplice`);
+  }
+  
+  else if(nn === "sim" && ee === "sim" && ww === "sim" && yy === "sim"){
+    alert(`Cúmplice`);
+  }
+  
+  else if(nn === "sim" && rr === "sim" && ww === "sim" && yy === "sim"){
+    alert(`Cúmplice`);
+  }
+   
+  else if(ee === "sim" && rr === "sim" && ww === "sim" && yy === "sim"){
+    alert(`Cúmplice`);
+  }
+  
+  else if(nn === "sim" && ee === "sim" && rr === "sim" && ww === "sim" && yy === "sim"){
+    alert(`Assassino`);
+  }
+  
+  else {
+    alert(`Inocente`)
+  }
+  </script>

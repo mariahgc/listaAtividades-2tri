@@ -5,10 +5,29 @@
     */
 
     //ENTRADA
+    const pi = Number(prompt("Informe um número:"));
+    const si = Number(prompt("Informe outro número:"));
+    const ti = Number(prompt("Informe um número diferente:"));
+    
 
+    if (pi > si && pi > ti && si > ti) {
+        alert(`${pi} . ${si} . ${ti}`);
+    }
+
+    else if (pi > si && pi < ti && pi > si) {
+        alert(`${ti} . ${pi} . ${si}`);
+    }
     
-    //PROCESSAMENTO
-    
-    //SAÍDA
-    
+    else if (pi < si && pi > ti && pi > ti) {
+        alert(`${si} . ${pi} . ${ti}`);
+    }
+    else if (si > ti && si > pi && ti > pi) {
+        alert(`${si} . ${ti} . ${pi}`);
+    }
+    else if (pi > si && pi > ti && si < ti) {
+        alert(`${pi} . ${ti} . ${si}`);
+    }
+    else {
+        alert(`${ti} . ${si} . ${pi}`);
+    }
 </script>
