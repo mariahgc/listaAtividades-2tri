@@ -9,18 +9,19 @@
     const xx = Number(prompt("Informe a idade de seu cão:"));
     const zz = prompt("Informe o porte de seu cão").toUpperCase();
 
+    const ll = xx * 7;
+    const yy = xx * 5;
+    const tt = xx * 6;
+
     if(zz == "médio"){
-        const tt = xx * 6;
         alert(`Seu cão está com ${tt} anos`);
     }
 
-    else if(zz == "pequeno"){
-        const yy = xx * 5;
+    else if(zz == "pequeno"){       
         alert(`Seu cão está com ${yy} anos`);
     }
 
-    else if(zz == "grande"){
-        const ll = xx * 7;
+    else if(zz == "grande"){       
         alert(`Seu cão está com ${ll} anos`);
     }
 
