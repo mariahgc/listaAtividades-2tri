@@ -16,30 +16,23 @@
     const ll = Number(prompt("Quantos litros foi vendido:"));
     const ag = prompt("Foi álcool ou gasolina?").toUpperCase();
 
-    if(ag == "álcool" && ll <= 20){
-        const litro = 6.1 * 0.97;
-        const pagar = litro * ll;
+    if(ag == "ÁLCOOL" && ll <= 20){
+        const pagar = ll * 5.92;
         alert(`O valor a ser pago será ${pagar}`);
     }
 
-    else if(ag == "álcool" && ll > 20){
-        const bb = 5 / 100 * ag;
-        const bbb = bb * ll;
-        const bbbb = ll * 6.10 - bbb;
+    else if(ag == "ÁLCOOL" && ll > 20){
+        const bbbb = ll * 5.8;
         alert(`O valor a ser pago será ${bbbb}`);
     }
 
-    else if(ag == "gasolina" && ll <= 20){
-        const xx = 4 / 100 * ag;
-        const xxx = xx * ll;
-        const xxxx = ll * 6.50 - xxx;
+    else if(ag == "GASOLINA" && ll <= 20){
+        const xxxx = ll * 6.24;
         alert(`O valor a ser pago será ${xxxx}`);
     }
 
-    else if(ag == "gasolina" && ll > 20){
-        const yy = 6 / 100 * ag;
-        const yyy = yy * ll;
-        const yyyy = ll * 6.50 - yyy;
+    else if(ag == "GASOLINA" && ll > 20){
+        const yyyy = ll * 6.11;
         alert(`O valor a ser pago será ${yyyy}`);
     }
  
