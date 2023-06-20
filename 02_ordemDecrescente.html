@@ -5,29 +5,29 @@
     */
 
     //ENTRADA
-    const pi = Number(prompt("Informe um número:"));
-    const si = Number(prompt("Informe outro número:"));
-    const ti = Number(prompt("Informe um número diferente:"));
+    const primeira = Number(prompt("Informe um número:"));
+    const segunda = Number(prompt("Informe outro número:"));
+    const terceira = Number(prompt("Informe um número diferente:"));
     
 
-    if (pi > si && pi > ti && si > ti) {
-        alert(`${pi} . ${si} . ${ti}`);
+    if (primeira > segunda && primeira > terceira && segunda > terceira) {
+        alert(`${primeira} . ${segunda} . ${terceira}`);
     }
 
-    else if (pi > si && pi < ti && pi > si) {
-        alert(`${ti} . ${pi} . ${si}`);
+    else if (primeira > segunda && primeira < terceira && primeira > segunda) {
+        alert(`${terceira} . ${primeira} . ${segunda}`);
     }
     
-    else if (pi < si && pi > ti && pi > ti) {
-        alert(`${si} . ${pi} . ${ti}`);
+    else if (primeira < segunda && primeira > terceira && primeira > terceira) {
+        alert(`${segunda} . ${primeira} . ${terceira}`);
     }
-    else if (si > ti && si > pi && ti > pi) {
-        alert(`${si} . ${ti} . ${pi}`);
+    else if (segunda > terceira && segunda > primeira && terceira > primeira) {
+        alert(`${segunda} . ${terceira} . ${primeira}`);
     }
-    else if (pi > si && pi > ti && si < ti) {
-        alert(`${pi} . ${ti} . ${si}`);
+    else if (primeira > segunda && primeira > terceira && segunda < terceira) {
+        alert(`${primeira} . ${terceira} . ${segunda}`);
     }
     else {
-        alert(`${ti} . ${si} . ${pi}`);
+        alert(`${terceira} . ${segunda} . ${primeira}`);
     }
 </script>

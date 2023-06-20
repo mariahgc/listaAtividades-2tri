@@ -7,22 +7,22 @@
     - inteiro ou decimal.
     */
 
-    const qq = Number(prompt("Informe um número"));
-    const ww = Number(prompt("Informe outro número"));
-    const ee = prompt("Informe qual operação deseja realizar:");
+    const num1 = Number(prompt("Informe um número"));
+    const num2 = Number(prompt("Informe outro número"));
+    const operacao = prompt("Informe qual operação deseja realizar:");
 
     let resultado = 0;
-    if (ee == "+") {
-        resultado = qq + ww;
+    if (operacao == "+") {
+        resultado = num1 + num2;
     }
-    else if (ee == "-") {
-        resultado = qq - ww;
+    else if (operacao == "-") {
+        resultado = num1 - num2;
     }
-    else if (ee == "*") {
-        resultado = qq * ww;
+    else if (operacao == "*") {
+        resultado = num1 * num2;
     }
-    else if (ee == "/") {
-        resultado = qq / ww;
+    else if (operacao == "/") {
+        resultado = num1 / num2;
     }
 
     if (resultado % 2 == 0) {

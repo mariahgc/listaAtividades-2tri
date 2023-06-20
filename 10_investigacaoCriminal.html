@@ -13,113 +13,113 @@
   
   
   
-  const nn = prompt("responda com sim ou não: Telefonou para a vítima?").toUpperCase();
-  const ee = prompt("responda com sim ou não: Esteve no local do crime?").toUpperCase();
-  const rr = prompt("responda com sim ou não: Mora perto da vítima?").toUpperCase();
-  const yy = prompt("responda com sim ou não: Devia para a vítima?").toUpperCase();
-  const ww = prompt("responda com sim ou não: Já trabalhou com a vítima?").toUpperCase();
+  const perg1 = prompt("responda com sim ou não: Telefonou para a vítima?").toUpperCase();
+  const perg2 = prompt("responda com sim ou não: Esteve no local do crime?").toUpperCase();
+  const perg3 = prompt("responda com sim ou não: Mora perto da vítima?").toUpperCase();
+  const perg4 = prompt("responda com sim ou não: Devia para a vítima?").toUpperCase();
+  const perg5 = prompt("responda com sim ou não: Já trabalhou com a vítima?").toUpperCase();
    
-  if (nn === "sim" && ee === "sim"){
+  if (perg1 === "sim" && perg2 === "sim"){
     alert(`suspeita`);
   }
    
-  else if (nn === "sim" && rr === "sim"){
+  else if (perg1 === "sim" && perg3 === "sim"){
     alert(`suspeita`);
   }
     
-  else if(nn === "sim" && yy === "sim") {
+  else if(perg1 === "sim" && perg4 === "sim") {
     alert(`suspeita`);
   }
    
-  else if(nn === "sim" && ww === "sim"){
+  else if(perg1 === "sim" && perg5 === "sim"){
     alert(`suspeita`);
   } 
   
-  else if(ee === "sim" && rr === "sim"){
+  else if(perg2 === "sim" && perg3 === "sim"){
     alert(`susupeita`);
   } 
   
-  else if(ee === "sim" && yy === "sim"){
+  else if(perg2 === "sim" && perg4 === "sim"){
     alert(`suspeita`);
   } 
   
-  else if(ee === "sim" && ww === "sim"){
+  else if(perg2 === "sim" && perg5 === "sim"){
     alert(`susupeita`);
   }
   
-  else if(rr === "sim" && yy === "sim"){
+  else if(perg3 === "sim" && perg4 === "sim"){
     alert(`suspeita`);
   }
    
-  else if(rr === "sim" && ww === "sim"){
+  else if(perg3 === "sim" && perg5 === "sim"){
     alert(`suspeita`);
   }
    
-  else if(yy === "sim" && ww === "sim"){
+  else if(perg4 === "sim" && perg5 === "sim"){
     alert(`suspeita`);
   }
   
-  else if(nn === "sim" && ee === "sim" && rr === "sim"){
+  else if(perg1 === "sim" && perg2 === "sim" && perg3 === "sim"){
     alert(`Cúmplice`);
   }
   
-  else if(nn === "sim" && ee === "sim" && ww === "sim"){
+  else if(perg1 === "sim" && perg2 === "sim" && perg5 === "sim"){
     alert(`Cúmplice`);
   }
   
-  else if(nn === "sim" && ee === "sim" && yy === "sim"){
+  else if(perg1 === "sim" && perg2 === "sim" && perg4 === "sim"){
     alert(`Cúmplice`);
   }
    
-  else if(nn === "sim" && rr == "sim" && ww == "sim"){
+  else if(perg1 === "sim" && perg3 == "sim" && perg5 == "sim"){
     alert(`Cúmplice`);
   }
   
-  else if(nn === "sim" && rr === "sim" && yy === "sim"){
+  else if(perg1 === "sim" && perg3 === "sim" && perg4 === "sim"){
     alert(`Cúmplice`);
   }
   
-  else if(nn === "sim" && ww === "sim" && yy === "sim"){
+  else if(perg1 === "sim" && perg5 === "sim" && perg4 === "sim"){
     alert(`Cúmplice`);
   }
   
-  else if(ee === "sim" && rr === "sim" && ww === "sim"){
+  else if(perg2 === "sim" && perg3 === "sim" && perg5 === "sim"){
     alert(`Cúmplice`);
   }
   
-  else if(ee === "sim" && rr === "sim" && yy === "sim"){
+  else if(perg2 === "sim" && perg3 === "sim" && perg4 === "sim"){
     alert(`Cúmplice`);
   }
    
-  else if(rr === "sim" && yy === "sim" && ww === "sim"){
+  else if(perg3 === "sim" && perg4 === "sim" && perg5 === "sim"){
     alert(`Cúmplice`);
   }
   
-  else if(nn === "sim" && ee === "sim" && rr === "sim" && ww === "sim"){
+  else if(perg1 === "sim" && perg2 === "sim" && perg3 === "sim" && perg5 === "sim"){
     alert(`Cúmplice`);
   }
   
-  else if(nn === "sim" && ee === "sim" && rr === "sim" && yy === "sim"){
+  else if(perg1 === "sim" && perg2 === "sim" && perg3 === "sim" && perg4 === "sim"){
     alert(`Cúmplice`);
   }
   
-  else if(nn === "sim" && ee === "sim" && ww === "sim" && yy === "sim"){
+  else if(perg1 === "sim" && perg2 === "sim" && perg5 === "sim" && perg4 === "sim"){
     alert(`Cúmplice`);
   }
   
-  else if(nn === "sim" && rr === "sim" && ww === "sim" && yy === "sim"){
+  else if(perg1 === "sim" && perg3 === "sim" && perg5 === "sim" && perg4 === "sim"){
     alert(`Cúmplice`);
   }
    
-  else if(ee === "sim" && rr === "sim" && ww === "sim" && yy === "sim"){
+  else if(perg2 === "sim" && perg3 === "sim" && perg5 === "sim" && perg4 === "sim"){
     alert(`Cúmplice`);
   }
   
-  else if(nn === "sim" && ee === "sim" && rr === "sim" && ww === "sim" && yy === "sim"){
+  else if(perg1 === "sim" && perg2 === "sim" && perg3 === "sim" && perg5 === "sim" && perg4 === "sim"){
     alert(`Assassino`);
   }
   
   else {
-    alert(`Inocente`)
+    alert(`Inocente`);
   }
   </script>

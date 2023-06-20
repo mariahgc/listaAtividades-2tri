@@ -6,29 +6,29 @@
         //- até 1500(inclusive): aumento de 10 %
         //- acima de 1500: aumento de 5 %
     
-    const dd = Number(prompt("Informe o preço do produto:"));
+    const produto = Number(prompt("Informe o preço do produto:"));
     
-    if(dd <= 280){
-        const ii = 20 / 100 * dd; 
-        const ff = dd + ii;
-        alert(`O preço do produto será: ${ff}`);
+    if(produto <= 280){
+        const conta1 = 20 / 100 * produto; 
+        const conta2 = produto + conta1;
+        alert(`O preço do produto será: ${conta2}`);
     }
 
-    else if(dd <= 700){
-        const hh = 15 / 100 * dd;
-        const ss = dd + hh;
-        alert(`O preço do produto será: ${ss}`);
+    else if(produto <= 700){
+        const conta3 = 15 / 100 * produto;
+        const conta4 = produto + conta3;
+        alert(`O preço do produto será: ${conta4}`);
     }
 
-    else if(dd <= 1500){
-        const jj = 10 / 100 * dd;
-        const pp = dd + jj;
-        alert(`O preço do produto será: ${pp}`);
+    else if(produto <= 1500){
+        const conta5 = 10 / 100 * produto;
+        const conta6 = produto + conta5;
+        alert(`O preço do produto será: ${conta6}`);
     }
 
-    else if(dd > 1500){
-        const kk = 5 / 100 * dd;
-        const mm = dd + kk;
-        alert(`O preço do produto será: ${mm}`);
+    else if(produto > 1500){
+        const conta7 = 5 / 100 * produto;
+        const conta8 = produto + conta7;
+        alert(`O preço do produto será: ${conta8}`);
     }
 </script>
